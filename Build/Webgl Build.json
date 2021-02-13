@@ -1,0 +1,16 @@
+{
+"companyName": "FKLG - Les Crafteurs",
+"productName": "Radio",
+"productVersion": "1.0",
+"dataUrl": "Webgl Build.data.unityweb",
+"wasmCodeUrl": "Webgl Build.wasm.code.unityweb",
+"wasmFrameworkUrl": "Webgl Build.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#3F2F80",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.18f1"
+}

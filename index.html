@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>📻🎶</title>
+    <script src="loading.js"></script>
+    <script src="TemplateData/UnityProgress.javascript"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Webgl Build.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div id="loading"> 
+        <div class="center">
+            <div class="lds-dual-ring"></div>
+        </div>
+    </div>
+    <div class="webgl-content">
+        <div id="gameContainer"></div>
+    </div>
+
+    <div id="problems">
+        <div><a id="display-bug">Problèmes d'affichage ?</a></div>
+        <div>
+            <a class="dl" href="Radio-Mac.zip" target="_blank">Version MacOS</a>
+        </div>
+        <div>
+            <a class="dl" href="Radio-Win.zip" target="_blank">Version Windows</a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(() => {
+            $("#display-bug").click(function() {
+                $("#problems").toggleClass('visible');
+            });
+        });
+    </script>
+    <script src="TemplateData/responsive.javascript"></script>
+  </body>
+</html>
