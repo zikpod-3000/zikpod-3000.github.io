@@ -25,7 +25,8 @@
 
 #loading
 {
-    background-color: #7257ff;
+    position: relative;
+    background-color: #7d5eff;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -35,13 +36,36 @@
     z-index: 100;
 }
 
+.loading-bar
+{
+    background-color: #0000002d;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 80px);
+    overflow: hidden;
+    height: 5px;
+    width: 200px;
+    z-index: 120;
+}
+
+.loading-bar .progress
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: white;
+    z-index: 120;
+}
+
 .center
 {
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-left: -20px;
-    margin-top: -40px;
+    transform: translate(-50%);
 }
 
 .lds-dual-ring {
